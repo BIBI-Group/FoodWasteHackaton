@@ -76,7 +76,7 @@ We explored using Grounding DINO for open-vocabulary ingredient localization and
 ### 1. Clone the repository
 
 ```
-git clone [https://github.com/YOUR-ORG/food-waste-project.git](https://github.com/BIBI-Group/FoodWasteHackaton.git)
+git clone https://github.com/BIBI-Group/FoodWasteHackaton.git
 cd food-waste-project
 ```
 
