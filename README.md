@@ -26,7 +26,15 @@ Our pipeline standardizes data types, enriches annotations, and enables modeling
   * Weight per ingredient
   * ... many other attributes, but we focused on the ingredients and weight per ingredient, as this was the core goal of the hackathon.
 
-**Problem**: Inconsistent data formats (e.g., `kcal_after` stored as string in some samples and float in others)
+**Problem 1**: Dataset B lacked food segmentation.
+
+**Solution**: We applied YOLOv8-E to each image to generate segmentation masks and stored the results directly in the FiftyOne dataset.
+
+**Problem 2**: Dataset B did not include vector representations for image similarity, clustering, or zero-shot classification.
+
+**Solution**: We generated CLIP-like embeddings for each image and added them to the FiftyOne dataset for future analysis (e.g., food type clustering or search).
+
+**Problem 3**: Inconsistent data formats (e.g., `kcal_after` stored as string in some samples and float in others)
 
 **Solution**: We developed a preprocessing script to convert all numeric attributes to float or int
 
@@ -41,7 +49,18 @@ We created a new set of 61 images in collaboration with other groups. Each image
 * Ingredient list
 * Weight per ingredient
 
-We built a Python script to generate annotations compatible with the original datasets, and uploaded the results to the same Hugging Face dataset.
+**Problem 1**: The dataset did not include annotation of ingredients compatible with the other datasets in FiftyOne format.
+
+**Solution**: We built a Python script to generate annotations compatible with the original datasets, and uploaded the results to the same Hugging Face dataset.
+
+**Problem 2**: Dataset B did not include vector representations for image similarity, clustering, or zero-shot classification.
+
+**Solution**: We generated CLIP-like embeddings for each image and added them to the FiftyOne dataset for future analysis (e.g., food type clustering or search).
+
+**Problem 3**: Inconsistent data formats (e.g., `kcal_after` stored as string in some samples and float in others)
+
+**Solution**: We developed a preprocessing script to convert all numeric attributes to float or int
+
 
 ---
 
