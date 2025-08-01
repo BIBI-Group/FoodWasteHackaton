@@ -24,18 +24,13 @@ Our pipeline standardizes data types, enriches annotations, and enables modeling
   * Image file
   * Ingredient list
   * Weight per ingredient
+  * ... many other attributes, but we focused on the ingredients and weight per ingredient, as this was the core goal of the hackathon.
 
 **Problem**: Inconsistent data formats (e.g., `kcal_after` stored as string in some samples and float in others)
 
-**Solution**: We developed a preprocessing script to:
+**Solution**: We developed a preprocessing script to convert all numeric attributes to float or int
 
-* Convert all numeric attributes to float or int
-* Standardize attribute names and units
-* Remove or flag invalid entries
-
-**Upload**: Both cleaned datasets were uploaded to Hugging Face
-👉 [Hugging Face Dataset A](https://huggingface.co/datasets/YOUR-DATASET-A)
-👉 [Hugging Face Dataset B](https://huggingface.co/datasets/YOUR-DATASET-B)
+**Upload**: Both cleaned datasets were merged and uploaded to Hugging Face: [Hugging Face Dataset]((https://huggingface.co/datasets/FoodWasteProjectBIBI/food_waste_merged_fiftyOneDS))
 
 ---
 
@@ -43,12 +38,10 @@ Our pipeline standardizes data types, enriches annotations, and enables modeling
 
 We created a new set of 61 images in collaboration with other groups. Each image was annotated with:
 
-* Ingredients
+* Ingredient list
 * Weight per ingredient
 
-We built a Python script to generate annotations compatible with the original datasets, and uploaded the results to Hugging Face.
-
-👉 [Hugging Face Collaborative Dataset](https://huggingface.co/datasets/YOUR-COLLAB-DATASET)
+We built a Python script to generate annotations compatible with the original datasets, and uploaded the results to the same Hugging Face dataset.
 
 ---
 
@@ -100,9 +93,10 @@ session = fo.launch_app(dataset)
 
 ## 🤝 Team
 
-* Alice Smith (@alice)
-* Bob Johnson (@bob)
-* Murilo Polla (@murilopolla)
+* Shahab D (@)
+* Zerina B (@)
+* Vivek Chavan (@)
+* Murilo Polla (@mrpolla)
 
 ---
 
