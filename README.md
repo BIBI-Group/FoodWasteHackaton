@@ -58,14 +58,25 @@ We created a new set of 61 images in collaboration with other groups. Each image
 
 **Solution**: Same as above.
 
----
+
+### 3. Changed the Model – CLIP Embeddings Instead of SBERT + ResNet
+
+We replaced the previous dual-encoder setup (SBERT for ingredients + ResNet for images) with CLIP (openai/clip-vit-base-patch32) for joint image–text embeddings.
+
+Created embeddings for each (photo, ingredient string) pair, enabling semantic alignment between visual and textual features.
+
+Froze the CLIP backbone and fine-tuned a lightweight regression head to predict ingredient weight.
+
+### 4. Attempted Localization with Grounding DINO + SAM (Not Completed)
+
+We explored using Grounding DINO for open-vocabulary ingredient localization and Segment Anything (SAM) for pixel-accurate masks. The goal was to compute ingredient visibility and use mask area as a proxy for weight (area ≈ grams). However, we didn’t complete the integration in time to include it in the final pipeline.
 
 ## 🛠️ How to Reproduce
 
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/YOUR-ORG/food-waste-project.git
+git clone [https://github.com/YOUR-ORG/food-waste-project.git](https://github.com/BIBI-Group/FoodWasteHackaton.git)
 cd food-waste-project
 ```
 
