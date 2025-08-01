@@ -110,10 +110,8 @@ fiftyone
 
 ## 🧠 Next Steps
 
-* Train a model to estimate food waste directly from images
 * Use Grounding DINO for object detection and segmentation
-* Use CLIP to assist with tagging and image similarity
-
+  
 ---
 
 ## 🤝 Team
