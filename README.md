@@ -53,14 +53,9 @@ We created a new set of 61 images in collaboration with other groups. Each image
 
 **Solution**: We built a Python script to generate annotations compatible with the original datasets, and uploaded the results to the same Hugging Face dataset.
 
-**Problem 2**: Dataset B did not include vector representations for image similarity, clustering, or zero-shot classification.
+**Problem 2 and 3**: Same as above.
 
-**Solution**: We generated CLIP-like embeddings for each image and added them to the FiftyOne dataset for future analysis (e.g., food type clustering or search).
-
-**Problem 3**: Inconsistent data formats (e.g., `kcal_after` stored as string in some samples and float in others)
-
-**Solution**: We developed a preprocessing script to convert all numeric attributes to float or int
-
+**Solution**: Same as above.
 
 ---
 
