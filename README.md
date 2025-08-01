@@ -93,10 +93,10 @@ session = fo.launch_app(dataset)
 
 ## 🤝 Team
 
-* Shahab Dayani (@shahabday)
-* Zerina Besic (@zerina-dev)
-* Vivek Chavan (@Vivek9Chavan)
-* Murilo Polla (@mrpolla)
+* Shahab Dayani [@shahabday]((https://github.com/shahabday))
+* Zerina Besic [@zerina-dev]((https://github.com/zerina-dev))
+* Vivek Chavan [@Vivek9Chavan]((https://github.com/Vivek9Chavan))
+* Murilo Polla [@mrpolla]((https://github.com/mrpolla))
 
 ---
 
