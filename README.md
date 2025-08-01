@@ -1,7 +1,3 @@
-Got it. Here is the **correctly formatted `README.md`** version — no conflicting escape sequences, no triple backticks inside fenced blocks, and safe to copy directly into a Markdown file:
-
----
-
 # 🍽️ Food Waste Estimation – Hackathon Project
 
 ## 📌 Project Summary
@@ -122,11 +118,3 @@ session = fo.launch_app(dataset)
 ## 📜 License
 
 MIT License – see `LICENSE`
-
----
-
-Let me know if you'd like:
-
-* A version in plain text (no Markdown)
-* A downloadable `README.md` file
-* To add your real Hugging Face links and dataset names now
