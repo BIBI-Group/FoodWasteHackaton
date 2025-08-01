@@ -93,9 +93,9 @@ session = fo.launch_app(dataset)
 
 ## 🤝 Team
 
-* Shahab D (@)
-* Zerina B (@)
-* Vivek Chavan (@)
+* Shahab Dayani (@shahabday)
+* Zerina Besic (@zerina-dev)
+* Vivek Chavan (@Vivek9Chavan)
 * Murilo Polla (@mrpolla)
 
 ---
