@@ -48,8 +48,9 @@ We created a new set of 61 images in collaboration with other groups. Each image
 
 * Ingredient list
 * Weight per ingredient
+* Split: train / test
 
-**Problem 1**: The dataset did not include annotation of ingredients compatible with the other datasets in FiftyOne format.
+**Problem 1**: The dataset did not include annotation of ingredient names, ingredient weights and train/test split compatible with the other datasets in FiftyOne format.
 
 **Solution**: We built a Python script to generate annotations compatible with the original datasets, and uploaded the results to the same Hugging Face dataset.
 
@@ -107,7 +108,7 @@ session = fo.launch_app(dataset)
 
 ## 🤝 Team
 
-* Shahab Dayani [@shahabday](https://github.com/shahabday)
+* Shahabeddin Dayani [@shahabday](https://github.com/shahabday)
 * Zerina Besic [@zerina-dev](https://github.com/zerina-dev)
 * Vivek Chavan [@Vivek9Chavan](https://github.com/Vivek9Chavan)
 * Murilo Polla [@mrpolla](https://github.com/mrpolla)
