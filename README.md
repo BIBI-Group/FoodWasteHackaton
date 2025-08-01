@@ -58,6 +58,8 @@ We created a new set of 61 images in collaboration with other groups. Each image
 
 **Solution**: Same as above.
 
+HuggingFace Dataset: https://huggingface.co/datasets/FoodWasteProjectBIBI/food_waste_dataset_with_added_samples
+
 
 ### 3. Changed the Model – CLIP Embeddings Instead of SBERT + ResNet
 
@@ -80,31 +82,28 @@ git clone https://github.com/BIBI-Group/FoodWasteHackaton.git
 cd food-waste-project
 ```
 
-### 2. Install dependencies
+### 2. Install packages
 
 ```
-pip install -r requirements.txt
+numpy
+torch
+Pillow
+transformers
+scikit-learn
+scipy
+fiftyone
 ```
 
-### 3. Run data cleaning script
+### 3. Run google notebooks
 
 ```
-python scripts/clean_dataset.py
+(t.b.d.)
 ```
-
-This will:
-
-* Convert mixed data types
-* Merge the datasets
-* Save a standardized version for FiftyOne
 
 ### 4. Visualize with FiftyOne
 
 ```python
-import fiftyone as fo
-
-dataset = fo.load_dataset("your_dataset_name")
-session = fo.launch_app(dataset)
+(t.b.d.)
 ```
 
 ---
