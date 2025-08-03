@@ -78,7 +78,7 @@ We evaluated Google's Gemini 2.5-Pro in a zero-shot setting by prompting it with
 
 **Observations:** Gemini achieved competitive Spearman correlation (ρ ≈ 0.71) with zero-shot inference. Simple post-hoc rescaling (×2) significantly improved total MAE without hurting relative ranking. Results suggest VLMs can generalize surprisingly well to domain-specific estimation tasks without fine-tuning.
 
-<img width="1001" height="316" alt="image" src="https://github.com/user-attachments/assets/a770b671-52f7-45a3-816f-085e2fd25696" />
+<img src="https://github.com/user-attachments/assets/a770b671-52f7-45a3-816f-085e2fd25696" alt="image" style="width:70%;" />
 
 
 ## 🛠️ How to Reproduce
