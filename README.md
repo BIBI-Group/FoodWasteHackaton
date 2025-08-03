@@ -73,7 +73,7 @@ Froze the CLIP backbone and fine-tuned a lightweight regression head to predict 
 
 We explored using Grounding DINO for open-vocabulary ingredient localization and Segment Anything (SAM) for pixel-accurate masks. The goal was to compute ingredient visibility and use mask area as a proxy for weight (area ≈ grams). However, we didn’t complete the integration in time to include it in the final pipeline.
 
-### 5. Zero-shot evaluations with Vision-Language Models with reasoning.
+### 5. Zero-shot evaluations with Vision-Language Models + Reasoning.
 We evaluated Google's Gemini 2.5-Pro in a zero-shot setting by prompting it with food plate images and asking for estimated ingredient-wise food waste. Despite having no training on the dataset, Gemini demonstrated strong per-ingredient reasoning and correlation with ground truth, though it underestimated absolute quantities.
 
 **Observations:** Gemini achieved competitive Spearman correlation (ρ ≈ 0.71) with zero-shot inference. Simple post-hoc rescaling (×2) significantly improved total MAE without hurting relative ranking. Results suggest VLMs can generalize surprisingly well to domain-specific estimation tasks without fine-tuning.
